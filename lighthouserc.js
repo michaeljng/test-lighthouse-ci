@@ -1,7 +1,8 @@
 module.exports = {
   ci: {
     collect: {
-      url: ['https://www.americastestkitchen.com/', 'https://www.cookscountry.com/', 'https://www.cooksillustrated.com/', 'https://www.americastestkitchen.com/reviews', 'https://www.americastestkitchen.com/articles', 'https://www.americastestkitchen.com/recipes/13333-cranberry-curd-tart-with-almond-crust'],
+      url: ['https://www-staging3.americastestkitchen.com/'],
+      puppeteerScript: 'puppeteer-script.js',
     },
     upload: {
       target: 'lhci',

@@ -16,4 +16,8 @@ jobs:
       - name: run Lighthouse CI
         run: |
           npm install -g @lhci/cli@0.8.x
+          npm install -g puppeteer
           lhci autorun
+        env:
+          LIGHTHOUSE_CHECK_USERNAME: ${{ secrets.LIGHTHOUSE_CHECK_USERNAME }}
+          LIGHTHOUSE_CHECK_PASSWORD: ${{ secrets.LIGHTHOUSE_CHECK_PASSWORD }}

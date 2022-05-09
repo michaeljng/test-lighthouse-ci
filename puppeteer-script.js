@@ -18,8 +18,10 @@ module.exports = async (browser, context) => {
   await page.waitForNavigation();
   await page.goto('https://www-staging3.cookscountry.com/sign_in');
   await page.authenticate(process.env.LIGHTHOUSE_CHECK_USERNAME, process.env.LIGHTHOUSE_CHECK_PASSWORD);
+  await page.waitForNavigation();
   await page.goto('https://www-staging3.cooksillustrated.com/sign_in');
   await page.authenticate(process.env.LIGHTHOUSE_CHECK_USERNAME, process.env.LIGHTHOUSE_CHECK_PASSWORD);
+  await page.waitForNavigation();
   // close session for next run
   await page.close();
 };

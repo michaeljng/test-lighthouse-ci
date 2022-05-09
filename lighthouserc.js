@@ -1,7 +1,7 @@
 module.exports = {
   ci: {
     collect: {
-      url: ['https://www-staging3.americastestkitchen.com/'],
+      url: ['https://www-staging3.cooksillustrated.com/'],
       puppeteerScript: 'puppeteer-script.js',
     },
     upload: {
